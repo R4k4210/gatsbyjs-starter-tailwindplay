@@ -2,7 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import { StaticQuery, graphql } from "gatsby";
 
-import heroImg from "../images/hero.png";
+import flexIoTProdInl from "../images/flexbit_iot_productos_inteligentes.png";
+import flexbitLogo from "../images/logo.png";
+import prodInteligenteConectadosInternet from "../brochures/Flexbit_IoT_Productos_inteligentes_conectados_a_Internet.pdf"
 
 function Layout({ children }) {
   return (
@@ -24,40 +26,35 @@ function Layout({ children }) {
             {children}
 
             {/* Navigation */}
-            <nav id="header" className="fixed w-full z-30 top-0 text-white bg-white shadow">
-
-              <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
-                  
-                <div className="pl-4 flex items-center">
-                  <a className="toggleColour no-underline hover:no-underline font-bold text-2xl lg:text-4xl text-gray-800"  href="#"> 
-                    <svg className="h-8 fill-current inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.005 512.005">
-                    <rect fill="#2a2a31" x="16.539" y="425.626" width="479.767" height="50.502" transform="matrix(1,0,0,1,0,0)" fill="rgb(0,0,0)" />
-                    <path className="plane-take-off" d=" M 510.7 189.151 C 505.271 168.95 484.565 156.956 464.365 162.385 L 330.156 198.367 L 155.924 35.878 L 107.19 49.008 L 211.729 230.183 L 86.232 263.767 L 36.614 224.754 L 0 234.603 L 45.957 314.27 L 65.274 347.727 L 105.802 336.869 L 240.011 300.886 L 349.726 271.469 L 483.935 235.486 C 504.134 230.057 516.129 209.352 510.7 189.151 Z "/>
-                    </svg> LANDING
-                  </a>
+            <nav id="header" className="fixed w-full z-30 top-0 text-white bg-black shadow">              
+                <div className="w-full gradient">   
+                  <a className="w-full " href="#">
+                    <div className="w-full mx-auto flex flex-wrap justify-center text-center py-3 text-xs md:text-base lg:text-2xl">                  
+                      <h1 className="mr-2">Coronavirus</h1>
+                      <span className="hidden sm:block mr-2">|</span>
+                      <h2>Campaña de donación de termómetros inteligentes</h2>
+                    </div>                
+                  </a>                                 
                 </div>
 
+              <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">                  
+                <div className="pl-4 flex items-center">
+                  <a className="toggleColour no-underline hover:no-underline font-bold text-2xl lg:text-4xl text-gray-800"  href="#"> 
+                    <img className="w-full md:w-4/5 z-50" src={flexbitLogo} />
+                  </a>
+                </div>
                 <div className="block lg:hidden pr-4">
                   <button id="nav-toggle" 
                           className="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 lg:bg-transparent text-black p-4 lg:p-0 z-20 bg-white">
                     <svg className="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
                   </button>
                 </div>
-
                 <div className="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20" id="nav-content">
                   <ul className="list-reset lg:flex justify-end flex-1 items-center">
                     <li className="mr-3">
-                      <a className="inline-block py-2 px-4 text-black font-bold no-underline" href="#">Active</a>
+                    <a className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-1 px-8 shadow-lg" href="#contact-form">Contáctenos</a>
                     </li>
-                    <li className="mr-3">
-                      <a className="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="#">link</a>
-                    </li>
-                  </ul>
-                  <form action={data.site.siteMetadata.github}>
-                    <button type="submit" id="navAction" 
-                            className="mx-auto lg:mx-0 hover:underline font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 gradient text-white">Get Sources</button>
-                  </form>
-
+                  </ul>                  
                 </div>
               </div>
               
@@ -70,21 +67,22 @@ function Layout({ children }) {
               <div className="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
 
                 <div className="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
-                  <p className="uppercase tracking-loose w-full">Open-Source project</p>
-                  <h1 className="my-4 text-5xl font-bold leading-tight">GatsbyJS Tailwind Starter</h1>
-                  <p className="leading-normal text-2xl mb-8">
-                    {data.site.siteMetadata.title} - a simple landing page styled with <a className="text-gray-800 font-bold underline" href="https://tailwindcss.com/">Tailwind CSS</a> 
-                    {' '} and generated by <a className="text-gray-800 font-bold underline" href="https://www.gatsbyjs.org/">GatsbyJS</a>
-                  </p>
-
-                  <form action={data.site.siteMetadata.github}>
-                    <button type="submit" className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg">Get Sources</button>
-                  </form>
-
+                  <h1 className="my-4 text-5xl font-bold leading-tight">Soluciones IoT</h1>
+                  <h4 className="leading-normal text-2xl mb-4">
+                    Productos inteligentes conectados a Internet
+                  </h4>
+                  <p className="leading-normal mb-8">Monitoree online sus activos y reciba alertas críticas de los sensores</p>
+                  <p className="leading-normal mb-8">Flexbit, empresa argentina fabricante de dispositivos & soluciones IoT</p>                  
+                  
+                  <div className="w-full py-6">
+                    <a className="lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg" href="#contact-form">Contáctenos</a>
+                    {'   '}
+                    <a className="lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg" target="_blank" href={prodInteligenteConectadosInternet}>Brochure</a>
+                  </div>
                 </div>
 
                 <div className="w-full md:w-3/5 py-6 text-center">
-                  <img className="w-full md:w-4/5 z-50" src={heroImg} />
+                  <img className="w-full z-50" src={flexIoTProdInl} />
                 </div>
                 
               </div>
@@ -235,67 +233,55 @@ function Layout({ children }) {
               
               <div className="container mx-auto flex flex-wrap pt-4 pb-12">
               
-                <h3 className="w-full my-2 text-3xl font-bold leading-tight text-center text-gray-800">Text Cards</h3>
+                <h3 className="w-full my-2 text-3xl font-bold leading-tight text-center text-gray-800">
+                  COMO FUNCIONAN LOS PRODUCTOS INTELIGENTES
+                </h3>
                 <div className="w-full mb-4">	
                   <div className="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
                 </div>
               
                 <div className="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
-                  <div className="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
-                    <a href="https://www.gatsbyjs.org/" className="flex flex-wrap no-underline hover:no-underline">
-                      <p className="w-full text-gray-600 text-xs md:text-sm px-6">Blazing Fast</p>
-                      <div className="w-full font-bold text-xl text-gray-800 px-6">Static Progressive Web App</div>
-                      <p className="text-gray-800 text-base px-6 mb-5">
-                        Why Gatsby? Gatsby is a static PWA (Progressive Web App) generator. Gatsby loads only the critical HTML, CSS, data, and JavaScript so your site loads as fast as possible. 
+                  <div className="group-item bg-white hover:shadow-xl flex-1 bg-white hover:bg-orange rounded-t rounded-b-none overflow-hidden text-center shadow">
+                      <div className="font-bold text-xl text-gray-800 px-6 my-8">
+                        <svg className="h-16 w-16 fill-current text-blue inline-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                          <path d="M18 9.87V20H2V9.87a4.25 4.25 0 0 0 3-.38V14h10V9.5a4.26 4.26 0 0 0 3 .37zM3 0h4l-.67 6.03A3.43 3.43 0 0 1 3 9C1.34 9 .42 7.73.95 6.15L3 0zm5 0h4l.7 6.3c.17 1.5-.91 2.7-2.42 2.7h-.56A2.38 2.38 0 0 1 7.3 6.3L8 0zm5 0h4l2.05 6.15C19.58 7.73 18.65 9 17 9a3.42 3.42 0 0 1-3.33-2.97L13 0z"/>
+                        </svg>
+                      </div>               
+                      <div className="w-full font-bold text-xl text-gray-800 px-6 mb-8">Conecte su dispositivo</div>
+                      <p className="text-gray-800 text-base px-6 mb-8">
+                        Use WIFI o las SIMS GPRS 4G provistas por Flexbit y conecte los dispositivos a Internet
                       </p>
-                    </a>
-                  </div>
-                  <div className="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-                    <div className="flex items-center justify-start">
-                      <button className="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg">Action</button>
-                    </div>
                   </div>
                 </div>
-                
-                
-                
+
                 <div className="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
-                  <div className="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
-                    <a href="https://tailwindcss.com/" className="flex flex-wrap no-underline hover:no-underline">
-                      <p className="w-full text-gray-600 text-xs md:text-sm px-6">Tailwind is different</p>
-                      <div className="w-full font-bold text-xl text-gray-800 px-6">State-of-the-art CSS Framework</div>
-                      <p className="text-gray-800 text-base px-6 mb-5">
-                        Instead of opinionated predesigned components, Tailwind provides low-level utility classes that let you build completely custom designs without ever leaving your HTML.
-                      </p>
-                    </a>
-                  </div>
-                  <div className="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-                    <div className="flex items-center justify-center">
-                      <button className="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg">Action</button>
-                    </div>
+                  <div className="group-item bg-white hover:shadow-xl flex-1 rounded-t rounded-b-none overflow-hidden text-center shadow">
+                    <div className="font-bold text-xl text-gray-800 px-6 my-8">
+                        <svg className="h-16 w-16 fill-current text-blue inline-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                          <path d="M18 9.87V20H2V9.87a4.25 4.25 0 0 0 3-.38V14h10V9.5a4.26 4.26 0 0 0 3 .37zM3 0h4l-.67 6.03A3.43 3.43 0 0 1 3 9C1.34 9 .42 7.73.95 6.15L3 0zm5 0h4l.7 6.3c.17 1.5-.91 2.7-2.42 2.7h-.56A2.38 2.38 0 0 1 7.3 6.3L8 0zm5 0h4l2.05 6.15C19.58 7.73 18.65 9 17 9a3.42 3.42 0 0 1-3.33-2.97L13 0z"/>
+                        </svg>
+                    </div>               
+                    <div className="w-full font-bold text-xl text-gray-800 px-6 mb-8">Use la plataforma online</div>
+                    <p className="text-gray-800 text-base px-6 mb-8">
+                      Desde cualquier navegador web administre y monitoree la información de sus dispositivos
+                    </p>
                   </div>
                 </div>
-                
-                
-                
+
                 <div className="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
-                  <div className="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
-                    <a href="#" className="flex flex-wrap no-underline hover:no-underline">
-                      <p className="w-full text-gray-600 text-xs md:text-sm px-6">Open-Source</p>
-                      <div className="w-full font-bold text-xl text-gray-800 px-6">Coded by <a href="https://twitter.com/Sm0keDev">Sm0ke</a> </div>
-                      <p className="text-gray-800 text-base px-6 mb-5">
-                        The source code is released under a license in which the copyright holder grants users the rights to study, change, and distribute the software to anyone and for any purpose.
-                      </p>
-                    </a>
-                  </div>
-                  <div className="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-                    <div className="flex items-center justify-end">
-                      <button className="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg">Action</button>
-                    </div>
+                  <div className="group-item bg-white hover:shadow-xl flex-1 rounded-t rounded-b-none overflow-hidden text-center shadow">
+                    <div className="font-bold text-xl text-gray-800 px-6 my-8">
+                        <svg className="h-16 w-16 fill-current text-blue inline-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                          <path d="M18 9.87V20H2V9.87a4.25 4.25 0 0 0 3-.38V14h10V9.5a4.26 4.26 0 0 0 3 .37zM3 0h4l-.67 6.03A3.43 3.43 0 0 1 3 9C1.34 9 .42 7.73.95 6.15L3 0zm5 0h4l.7 6.3c.17 1.5-.91 2.7-2.42 2.7h-.56A2.38 2.38 0 0 1 7.3 6.3L8 0zm5 0h4l2.05 6.15C19.58 7.73 18.65 9 17 9a3.42 3.42 0 0 1-3.33-2.97L13 0z"/>
+                        </svg>
+                    </div>               
+                    <div className="w-full font-bold text-xl text-gray-800 px-6 mb-8">Reciba alertas en la APP</div>
+                    <p className="text-gray-800 text-base px-6 mb-8">
+                      Descargue la APP y reciba las alertas que programó para tomar acciones correctivas
+                    </p>
                   </div>
                 </div>
-                
-                
+ 
               </div>
 
             </section>
@@ -305,7 +291,7 @@ function Layout({ children }) {
               
               <div className="container mx-auto px-2 pt-4 pb-12 text-gray-800">
 
-                <h1 className="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">Pricing</h1>
+                <h1 className="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">ESCOJA SU PLAN</h1>
                 <div className="w-full mb-4">	
                   <div className="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
                 </div>
@@ -314,53 +300,55 @@ function Layout({ children }) {
                   
                   <div className="flex flex-col w-5/6 lg:w-1/4 mx-auto lg:mx-0 rounded-none lg:rounded-l-lg bg-white mt-4">
                     <div className="flex-1 bg-white text-gray-600 rounded-t rounded-b-none overflow-hidden shadow">
-                      <div className="p-8 text-3xl font-bold text-center border-b-4">Free</div>
+                      <div className="p-8 text-3xl font-bold text-center border-b-4">WIFI</div>
                       <ul className="w-full text-center text-sm">
-                        <li className="border-b py-4">Thing</li>
-                        <li className="border-b py-4">Thing</li>
-                        <li className="border-b py-4">Thing</li>
+                        <li className="border-b py-4">Conexión WIFI</li>
+                        <li className="border-b py-4">Hasta 3 usuarios</li>
+                        <li className="border-b py-4">Múltiples productos</li>
+                        <li className="border-b py-4">Acceso a plataforma & APP</li>
                       </ul>
                     </div>
                     <div className="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-                      <div className="w-full pt-6 text-3xl text-gray-600 font-bold text-center">£0 <span className="text-base">for one user</span></div>
+                      <div className="w-full pt-6 text-3xl text-gray-600 font-bold text-center">FREE <span className="text-base">0/mes</span></div>
                       <div className="flex items-center justify-center">
-                        <button className="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg">Sign Up</button>
+                        <button className="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg">Comenzar</button>
                       </div>
                     </div>
                   </div>
 
                   <div className="flex flex-col w-5/6 lg:w-1/3 mx-auto lg:mx-0 rounded-lg bg-white mt-4 sm:-mt-6 shadow-lg z-10">
                     <div className="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
-                      <div className="w-full p-8 text-3xl font-bold text-center">Basic</div>
+                      <div className="w-full p-8 text-3xl font-bold text-center">GPRS</div>
                       <div className="h-1 w-full gradient my-0 py-0 rounded-t"></div>
                       <ul className="w-full text-center text-base font-bold">
-                        <li className="border-b py-4">Thing</li>
-                        <li className="border-b py-4">Thing</li>
-                        <li className="border-b py-4">Thing</li>
-                        <li className="border-b py-4">Thing</li>
+                        <li className="border-b py-4">Conexión GPRS y WIFI</li>
+                        <li className="border-b py-4">Hasta 10 usuarios</li>
+                        <li className="border-b py-4">Multiproductos, plataforma & APP</li>
+                        <li className="border-b py-4">SIMs & Internet provistas por Flexbit</li>
                       </ul>					
                     </div>
                     <div className="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-                      <div className="w-full pt-6 text-4xl font-bold text-center">£x.99 <span className="text-base">/ per user</span></div>
+                      <div className="w-full pt-6 text-4xl font-bold text-center">250 <span className="text-base">$/mes</span></div>
                       <div className="flex items-center justify-center">
-                        <button className="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg">Sign Up</button>
+                        <button className="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg">Comenzar</button>
                       </div>
                     </div>
                   </div>
                   
                   <div className="flex flex-col w-5/6 lg:w-1/4 mx-auto lg:mx-0 rounded-none lg:rounded-l-lg bg-white mt-4">
                     <div className="flex-1 bg-white text-gray-600 rounded-t rounded-b-none overflow-hidden shadow">
-                      <div className="p-8 text-3xl font-bold text-center border-b-4">Pro</div>
+                      <div className="p-8 text-3xl font-bold text-center border-b-4">Empresarial</div>
                       <ul className="w-full text-center text-sm">
-                        <li className="border-b py-4">Thing</li>
-                        <li className="border-b py-4">Thing</li>
-                        <li className="border-b py-4">Thing</li>
+                        <li className="border-b py-4">Redes Low Power</li>
+                        <li className="border-b py-4">Múltiples usuarios</li>
+                        <li className="border-b py-4">Integraciones de software</li>
+                        <li className="border-b py-4">Desarrollo a medida de APPs</li>
                       </ul>
                     </div>
                     <div className="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-                      <div className="w-full pt-6 text-3xl text-gray-600 font-bold text-center">£x.99 <span className="text-base">/ per user</span></div>
+                      <div className="w-full pt-6 text-3xl text-gray-600 font-bold text-center">CONSULTAR</div>
                       <div className="flex items-center justify-center">
-                        <button className="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg">Sign Up</button>
+                        <button className="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg">Comenzar</button>
                       </div>
                     </div>
                   </div>
@@ -392,95 +380,148 @@ function Layout({ children }) {
             {/* CTA block */}
             <section className="container mx-auto text-center py-6 mb-12">
 
-              <h1 className="w-full my-2 text-5xl font-bold leading-tight text-center text-white">Call to Action</h1>
+              <h1 className="w-full my-2 text-5xl font-bold leading-tight text-center text-white">¿Pensando en Innovar?</h1>
               <div className="w-full mb-4">	
                 <div className="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
               </div>
 
-              <h3 className="my-4 text-3xl leading-tight">Read more about GatsbyJS</h3>	
+              <h3 className="my-4 text-lg sm:text-2xl leading-tight">Asegure su iniciativa de monitoreo online y alertas críticas con nuestros Productos inteligentes conectados a Internet</h3>
+              <h3 className="my-4 text-lg sm:text-2xl leading-tight">Somos fabricantes. Aseguramos soporte, garantía y mantenimientos de toda la tecnología Flexbit</h3>
+              <h3 className="my-4 text-lg sm:text-2xl leading-tight mb-12">Tenemos la solución que busca</h3>
 
-              <form action={data.site.siteMetadata.blog}>
-                <button type="submit"
-                        className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg">Action!</button>
-              </form>
+              <a className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg" href="#contact-form">Contáctenos</a>              
+
+            </section>
+
+            {/* Waves SVG */}
+            <div class="relative -mt-12">
+              <svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg">
+              <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g transform="translate(-2.000000, 44.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                <path d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496" opacity="0.100000001"></path>
+                <path d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z" opacity="0.100000001"></path>
+                <path d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z" id="Path-4" opacity="0.200000003"></path>
+              </g>
+              <g transform="translate(-4.000000, 76.000000)" fill="#f7fafc" fill-rule="nonzero">
+                <path d="M0.457,34.035 C57.086,53.198 98.208,65.809 123.822,71.865 C181.454,85.495 234.295,90.29 272.033,93.459 C311.355,96.759 396.635,95.801 461.025,91.663 C486.76,90.01 518.727,86.372 556.926,80.752 C595.747,74.596 622.372,70.008 636.799,66.991 C663.913,61.324 712.501,49.503 727.605,46.128 C780.47,34.317 818.839,22.532 856.324,15.904 C922.689,4.169 955.676,2.522 1011.185,0.432 C1060.705,1.477 1097.39,3.129 1121.236,5.387 C1161.703,9.219 1208.621,17.821 1235.4,22.304 C1285.855,30.748 1354.351,47.432 1440.886,72.354 L1441.191,104.352 L1.121,104.031 L0.457,34.035 Z"></path>
+              </g>
+              </g>
+              </svg>
+            </div>
+
+            {/* Contact Form */}
+            <section id="contact-form" className="mx-auto text-center py-8 pt-24 bg-gray-100">
+              
+              <h1 className="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">Contáctenos</h1>
+              <div className="w-full mb-4">	
+                <div className="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+              </div>
+
+              <div class="flex flex-wrap mb-12 mt-12">
+                <div class="w-full md:w-1/2 text-center text-gray-200">                   
+
+                  <form class="w-full my-6">
+                    <div class="flex items-center mb-6 px-4">
+                        <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-orange-500" id="name" name="name" type="text" placeholder="Nombre y Apellido"/>
+                    </div>
+                    <div class="flex items-center mb-6 px-4">
+                        <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-orange-500" id="email" name="email" type="email" placeholder="Email"/>
+                    </div>
+                    <div class="flex items-center mb-6 px-4">
+                        <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-orange-500" id="subject" name="subject" type="text" placeholder="Asunto"/>
+                    </div>
+                    <div class="flex items-center mb-6 px-4">
+                        <textarea class="form-textarea bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-orange-500" rows="1" id="message" name="message" placeholder="Mensaje"></textarea>
+                    </div>
+                    <div class="flex items-right justify-end px-4">                    
+                        <button class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg" type="button">
+                          Enviar
+                        </button>
+                    </div>
+
+                  </form>
+
+                </div>
+                <div class="w-full md:w-1/2 md:p-4 text-center text-gray-700">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.6307189511845!2d-58.387825885194935!3d-34.61349836552174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccada2a1df8f5%3A0xbf61218be360b52f!2sMicroGestion%20Software!5e0!3m2!1ses!2sar!4v1588146744226!5m2!1ses!2sar" className="google-map" allowfullscreen=""></iframe>
+                </div>
+
+              </div>
 
             </section>
 
             {/* Footer */}
-            <footer className="bg-white">
+            <footer className="bg-black">
               <div className="container mx-auto  px-8">
-
-                    <div className="w-full flex flex-col md:flex-row py-6">
-                    
+                <div className="w-full flex flex-col md:flex-row py-6">
                   <div className="flex-1 mb-6">
-                  
+                    {/*
                     <a className="text-orange-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"  href="#"> 
                       <svg className="h-8 fill-current inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.005 512.005">
                       <rect fill="#2a2a31" x="16.539" y="425.626" width="479.767" height="50.502" transform="matrix(1,0,0,1,0,0)" fill="rgb(0,0,0)" />
                       <path className="plane-take-off" d=" M 510.7 189.151 C 505.271 168.95 484.565 156.956 464.365 162.385 L 330.156 198.367 L 155.924 35.878 L 107.19 49.008 L 211.729 230.183 L 86.232 263.767 L 36.614 224.754 L 0 234.603 L 45.957 314.27 L 65.274 347.727 L 105.802 336.869 L 240.011 300.886 L 349.726 271.469 L 483.935 235.486 C 504.134 230.057 516.129 209.352 510.7 189.151 Z "/>
-                      </svg> LANDING
+                      </svg> FLEXBIT                     
                     </a>
+                    */}
+                    <img className="md:w-1/2" src={flexbitLogo} />
                   </div>
-                
-                
-                        <div className="flex-1">
-                            <p className="uppercase text-gray-500 md:mb-6">Links</p>
-                            <ul className="list-reset mb-6">
-                                <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-                                    <a href="#" className="no-underline hover:underline text-gray-800 hover:text-orange-500">FAQ</a>
-                                </li>
-                                <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-                                    <a href="#" className="no-underline hover:underline text-gray-800 hover:text-orange-500">Help</a>
-                                </li>
-                                <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-                                    <a href="#" className="no-underline hover:underline text-gray-800 hover:text-orange-500">Support</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div className="flex-1">
-                            <p className="uppercase text-gray-500 md:mb-6">Legal</p>
-                            <ul className="list-reset mb-6">
-                                <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-                                    <a href="#" className="no-underline hover:underline text-gray-800 hover:text-orange-500">Terms</a>
-                                </li>
-                                <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-                                    <a href="#" className="no-underline hover:underline text-gray-800 hover:text-orange-500">Privacy</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div className="flex-1">
-                            <p className="uppercase text-gray-500 md:mb-6">Social</p>
-                            <ul className="list-reset mb-6">
-                                <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-                                    <a href="#" className="no-underline hover:underline text-gray-800 hover:text-orange-500">Facebook</a>
-                                </li>
-                                <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-                                    <a href="#" className="no-underline hover:underline text-gray-800 hover:text-orange-500">Linkedin</a>
-                                </li>
-                                <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-                                    <a href="#" className="no-underline hover:underline text-gray-800 hover:text-orange-500">Twitter</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div className="flex-1">
-                            <p className="uppercase text-gray-500 md:mb-6">Company</p>
-                            <ul className="list-reset mb-6">
-                                <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-                                    <a href="#" className="no-underline hover:underline text-gray-800 hover:text-orange-500">Official Blog</a>
-                                </li>
-                                <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-                                    <a href="#" className="no-underline hover:underline text-gray-800 hover:text-orange-500">About Us</a>
-                                </li>
-                                <li className="mt-2 inline-block mr-2 md:block md:mr-0">
-                                    <a href="#" className="no-underline hover:underline text-gray-800 hover:text-orange-500">Contact</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-              
-              <a href="https://www.freepik.com/free-photos-vectors/background">Background vector created by freepik - www.freepik.com</a>
 
+                  <div className="flex-1">
+                      <p className="uppercase text-gray-500 md:mb-6">Links</p>
+                      <ul className="list-reset mb-6">
+                          <li className="mt-2 inline-block mr-2 md:block md:mr-0">
+                              <a href="#" className="no-underline hover:underline text-gray-800 hover:text-orange-500">FAQ</a>
+                          </li>
+                          <li className="mt-2 inline-block mr-2 md:block md:mr-0">
+                              <a href="#" className="no-underline hover:underline text-gray-800 hover:text-orange-500">Help</a>
+                          </li>
+                          <li className="mt-2 inline-block mr-2 md:block md:mr-0">
+                              <a href="#" className="no-underline hover:underline text-gray-800 hover:text-orange-500">Support</a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div className="flex-1">
+                      <p className="uppercase text-gray-500 md:mb-6">Legal</p>
+                      <ul className="list-reset mb-6">
+                          <li className="mt-2 inline-block mr-2 md:block md:mr-0">
+                              <a href="#" className="no-underline hover:underline text-gray-800 hover:text-orange-500">Terms</a>
+                          </li>
+                          <li className="mt-2 inline-block mr-2 md:block md:mr-0">
+                              <a href="#" className="no-underline hover:underline text-gray-800 hover:text-orange-500">Privacy</a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div className="flex-1">
+                      <p className="uppercase text-gray-500 md:mb-6">Social</p>
+                      <ul className="list-reset mb-6">
+                          <li className="mt-2 inline-block mr-2 md:block md:mr-0">
+                              <a href="#" className="no-underline hover:underline text-gray-800 hover:text-orange-500">Facebook</a>
+                          </li>
+                          <li className="mt-2 inline-block mr-2 md:block md:mr-0">
+                              <a href="#" className="no-underline hover:underline text-gray-800 hover:text-orange-500">Linkedin</a>
+                          </li>
+                          <li className="mt-2 inline-block mr-2 md:block md:mr-0">
+                              <a href="#" className="no-underline hover:underline text-gray-800 hover:text-orange-500">Twitter</a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div className="flex-1">
+                      <p className="uppercase text-gray-500 md:mb-6">Company</p>
+                      <ul className="list-reset mb-6">
+                          <li className="mt-2 inline-block mr-2 md:block md:mr-0">
+                              <a href="#" className="no-underline hover:underline text-gray-800 hover:text-orange-500">Official Blog</a>
+                          </li>
+                          <li className="mt-2 inline-block mr-2 md:block md:mr-0">
+                              <a href="#" className="no-underline hover:underline text-gray-800 hover:text-orange-500">About Us</a>
+                          </li>
+                          <li className="mt-2 inline-block mr-2 md:block md:mr-0">
+                              <a href="#" className="no-underline hover:underline text-gray-800 hover:text-orange-500">Contact</a>
+                          </li>
+                      </ul>
+                  </div>
+                </div>
+              </div>
+                  
             </footer>
 
         </body>

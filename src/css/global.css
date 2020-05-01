@@ -3,3 +3,16 @@
     background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
 }
 
+.google-map {
+    width: 100%;
+    height: 100%;
+}
+
+.form-textarea {
+    height: 140px;
+    resize: none;
+}
+
+.group-item:hover div {
+    color: #ed8936;
+}
